@@ -115,7 +115,18 @@ export default {
           {
           icon: 'mdi-chart-bubble',
           title: 'Admin Dashboard',
-          to: '/admin_dashboard'
+          to: '/admin/dashboard'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'User Dashboard',
+          to: '/user/dashboard'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Customer Dashboard',
+          to: '/customer/dashboard'
+
         }
       ],
       miniVariant: false,
