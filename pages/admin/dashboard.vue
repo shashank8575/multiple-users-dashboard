@@ -58,9 +58,10 @@ export default {
     // console.log(' before created ');
     const data = localStorage.getItem("user");
     const userData = (data && JSON.parse(data)) || { role: "" };
-// debugger
-    if (userData.role === "user") {
-      this.$router.push("/user/dashboard");
+    // debugger;
+    if (userData.role != "admin") {
+      alert("You don't have access to this route");
+      this.$router.back()
     }
   },
 };
