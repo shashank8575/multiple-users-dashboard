@@ -23,7 +23,7 @@
                     type="password"
                     outlined
                     placeholder="Enter your Password"
-                    v-model="password"
+                    v-model="password" v-on:keyup.enter="login()"
                   ></v-text-field>
 
                   <v-btn
